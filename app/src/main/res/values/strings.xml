@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BioData</string>
+    <string-array name="college_names">
+        <item>Select College Name</item>
+        <item>Kongu Engineering College</item>
+        <item>Nandha Engineering College</item>
+    </string-array>
+</resources>

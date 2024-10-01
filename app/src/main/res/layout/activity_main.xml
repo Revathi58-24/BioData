@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Roll Number Input -->
+    <EditText
+        android:id="@+id/etRollNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your roll number" />
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:layout_below="@id/etRollNo"
+        android:layout_marginTop="16dp" />
+
+    <!-- Age Input -->
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="16dp"
+        android:inputType="number" />
+
+    <!-- College Name Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerCollege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAge"
+        android:layout_marginTop="16dp"
+        android:entries="@array/college_names" />
+
+    <!-- Date of Birth Input -->
+    <EditText
+        android:id="@+id/etDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your date of birth"
+        android:layout_below="@id/spinnerCollege"
+        android:layout_marginTop="16dp"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <!-- Gender Radio Group -->
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDob"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <!-- Skills Input -->
+    <EditText
+        android:id="@+id/etSkills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your skills"
+        android:layout_below="@id/rgGender"
+        android:layout_marginTop="16dp" />
+
+    <!-- Hobbies Checkboxes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies:"
+        android:layout_below="@id/etSkills"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/cbReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reading"
+        android:layout_below="@id/etSkills"
+        android:layout_marginTop="32dp" />
+
+    <CheckBox
+        android:id="@+id/cbTraveling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traveling"
+        android:layout_below="@id/cbReading"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbGaming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaming"
+        android:layout_below="@id/cbTraveling"
+        android:layout_marginTop="8dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/cbGaming"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
